@@ -144,46 +144,58 @@ class DetailPage extends StatelessWidget {
           Container(
             child: Stack(
               children: <Widget>[
-
                 Container(
-                  padding: EdgeInsets.fromLTRB(13.0, 80.0, 0.0, 0.0),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(top: 180.0),
                   child: Text(
                     'Name: ' + user.name,
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontFamily: 'Montserrat'
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(13.0, 130.0, 0.0, 0.0),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(top: 230.0),
                   child: Text(
                     'Username: ' + user.username,
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontFamily: 'Montserrat'
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(13.0, 180.0, 0.0, 0.0),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(top: 280.0),
                   child:
                   Text(
                     'Email: ' + user.email,
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontFamily: 'Montserrat'
                     ),
                   ),
                 ),
                 Container(
-                  padding: EdgeInsets.fromLTRB(13.0, 230.0, 0.0, 0.0),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(top: 330.0),
                   child: Text(
                     'Phone: ' + user.phone,
                     style: TextStyle(
-                      fontSize: 20.0,
+                      fontSize: 18.0,
                       fontFamily: 'Montserrat'
                     ),
+                  ),
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(top: 25.0),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/clipart_.png'),
+                    backgroundColor: Colors.purple,
+                    radius: 60.0,
                   ),
                 ),
               ],
